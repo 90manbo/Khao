@@ -1,67 +1,68 @@
 :root {
-    --text-color: #263343;
-    --background-color: #f0f4f5;
-    --accent-color: yellowgreen;
+    --text-color: #black;
+    --accent-color: #ffc1e3;
+    --background-color: #bf5f82;
 }
 
 body {
     margin: 0;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Code Pro', monospace;
 }
 
 a {
     text-decoration: none;
     color: var(--text-color);
 }
+
 .navbar {
     display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
     padding: 8px 12px;
-}
-
-.navbar_logo {
-    font-size: 24px;
     color: var(--text-color);
 }
 
-.navbar_logo a img {
-    height: 100px;
-    width: 100px;
+.logo_img {
+    padding: 8px 12px;
+    width: 130px;
+    height: 130px;
 }
 
-.navbar_menu {
+.navbar_list {
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-.navbar_menu li {
+.navbar_list li {
+    font-size: 1.1em;
     padding: 8px 12px;
 }
-.navbar_menu li:hover {
+
+.navbar_list li:hover {
     background-color: var(--accent-color);
     border-radius: 4px;
 }
 
-.navbar_icons {
+.navbar_sns {
     list-style: none;
-    color: var(--text-color);
     display: flex;
+    font-size: 24px;
     padding-left: 0;
 }
 
-.navbar_icons li {
-    padding: 8px 12px;
+.navbar_sns li {
+    padding: 8px 8px;
 }
 
-.navbar_togleBtn {
+.navbar_toggleBtn {
     display: none;
     position: absolute;
     right: 32px;
     font-size: 24px;
-    color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -70,32 +71,34 @@ a {
         align-items: center;
         padding: 8px 24px;
     }
-    
-    .navbar_menu {
+
+    .navbar_list {
         display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    .navbar_menu li {
+    .navbar_list li {
+        font-size: 1em;
         width: 100%;
         text-align: center;
     }
 
-    .navbar_icons {
+    .navbar_sns {
         display: none;
         justify-content: center;
+
         width: 100%;
     }
-    
-    .navbar_togleBtn {
+
+    .navbar_toggleBtn {
         display: block;
     }
 
-    .navbar_menu.active,
-    .navbar_icons.active {
+    .navbar_list.active,
+    .navbar_sns.active {
         display: flex;
     }
-    
 }
+
