@@ -4,28 +4,30 @@
   --pink-color: #ffc1e3;
 }
 
-body {
+html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  font-family: 'Bangers', cursive;
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--black-color);
 }
 
+
+/* navigation bar */
 .navbar {
   display: flex;
   position: fixed;
   justify-content: space-around;
   align-items: center;
-  z-index: 9999;
   width: 100%;
+  z-index: 9999;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   opacity: 1;
-  font-family: 'Exo 2', sans-serif;
   background-color: var(--white-color);
   box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
 }
@@ -34,31 +36,20 @@ a {
   width: 7em;
 }
 
-.navbar_list {
+.navbar_list, .navbar_sns {
   display: flex;
   list-style: none;
   padding-left: 0;
 }
 
-.navbar_list li {
+.navbar_list li, .navbar_sns li {
   padding: 0.5em 0.5em;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .navbar_list li:hover {
-  background-color: var(--accent-color);
+  background-color: var(--pink-color);
   border-radius: 0.5em;
-}
-
-.navbar_sns {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-
-.navbar_sns li {
-  padding: 0.5em 0.5em;
-  font-size: 1.7em;
 }
 
 .navbar_toggleBtn {
@@ -69,6 +60,8 @@ a {
   display: none;
 }
 
+
+/* section */
 .section_khao,
 .section_menu,
 .section_contact {
@@ -80,7 +73,7 @@ a {
   background-color: black;
 }
 
-.section_foods_interior,
+.section_food_interior,
 .section_franchise {
   padding-top: 10em;
   padding-bottom: 10em;
@@ -109,7 +102,7 @@ a {
   color: #ffc1e3;
 }
 
-.section_foods_interior .section_foods_interior_paragraph,
+.section_food_interior .section_food_interior_paragraph,
 .section_franchise .section_franchise_paragraph {
   margin: 0;
   width: 100%;
