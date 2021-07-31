@@ -89,7 +89,6 @@ a {
 .section_contact .section_contact_paragraph {
   margin: 0;
   width: 100%;
-  font-family: 'Bangers', cursive;
   font-size: 5em;
   color: white;
 }
@@ -97,7 +96,6 @@ a {
 .section_franchise .section_franchise_paragraph2 {
   margin: 0;
   width: 100%;
-  font-family: 'Exo 2', sans-serif;
   font-size: 1em;
   color: #ffc1e3;
 }
@@ -106,7 +104,6 @@ a {
 .section_franchise .section_franchise_paragraph {
   margin: 0;
   width: 100%;
-  font-family: 'Bangers', cursive;
   font-size: 5em;
   color: black;
 }
@@ -272,6 +269,27 @@ input#img-10:checked~.nav-dots label#img-dot-10 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* interior*/
 
 /*
@@ -280,9 +298,9 @@ DEPENDENCES
 =====
 */
 
-.media-placeholder {
+/* .media-placeholder {
   position: var(--mediaPlaceholderPosition, relative) !important;
-}
+} */
 
 .media-placeholder::before {
   content: "" !important;
@@ -317,7 +335,7 @@ CORE STYLES
   will-change: transform;
 }
 
-.photobox__previewbox::after {
+/* .photobox__previewbox::after {
   content: "";
   width: var(--photoboxOverlayWidth, 100%);
   height: var(--photoboxOverlayHeight, 100%);
@@ -327,7 +345,7 @@ CORE STYLES
   top: var(--photoboxOverlayTop, 0);
   left: var(--photoboxOverlayLeft, 0);
   z-index: var(--photoboxOverlayZindex, 2);
-}
+} */
 
 .photobox__info-wrapper {
   box-sizing: border-box;
@@ -461,7 +479,7 @@ SETTINGS
 
 :root {
   --photoboxPlaceholderRatio: 66.56%;
-  --photoboxOverlayBackgroundColor: rgba(72, 27, 174, .7);
+  /* --photoboxOverlayBackgroundColor: rgba(72, 27, 174, .7); */
 }
 
 /*
@@ -472,12 +490,12 @@ DEMO
 
 .page {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); */
 }
 
 .photobox {
-  color: #fff;
-  font-size: 1.25rem;
+  color: var(--white-color);
+  font-size: 1.5em;
   font-weight: 700;
 }
 
