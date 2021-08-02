@@ -6,6 +6,3 @@ toggleBtn.addEventListener('click', ()=>{
     list.classList.toggle('active');
     sns.classList.toggle('active');
 });
-
-
-
