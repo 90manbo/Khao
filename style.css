@@ -297,9 +297,7 @@ input#img-4:checked~.nav-dots label#img-dot-4,
 input#img-5:checked~.nav-dots label#img-dot-5,
 input#img-6:checked~.nav-dots label#img-dot-6,
 input#img-7:checked~.nav-dots label#img-dot-7,
-input#img-8:checked~.nav-dots label#img-dot-8,
-input#img-9:checked~.nav-dots label#img-dot-9,
-input#img-10:checked~.nav-dots label#img-dot-10 {
+input#img-8:checked~.nav-dots label#img-dot-8 {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -543,7 +541,7 @@ input#img-10:checked~.nav-dots label#img-dot-10 {
   .modal-content{
     align-items: center;
     margin: auto;
-    margin-top: 20em;
+    margin-top: 15em;
     display: block;
     max-width: 70%;
     max-height: auto;
