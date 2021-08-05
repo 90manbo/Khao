@@ -108,6 +108,12 @@ a {
   font-size: 1.7em;
   color: var(--white-color);
 }
+.section_contact .section_contact_paragraph3 {
+  margin: 0;
+  width: 100%;
+  font-size: 2.5em;
+  color: var(--pink-color);
+}
 
 /* section khao video setting */
 .section_khao video {
@@ -180,9 +186,9 @@ a {
 .modal-content{
   align-items: center;
   margin: auto;
-  margin-top: 20em;
+  margin-top: 10em;
   display: block;
-  max-width: 40%;
+  max-width: 35%;
   max-height: auto;
   border-radius: 0.7em;
 }
@@ -382,6 +388,12 @@ input#img-8:checked~.nav-dots label#img-dot-8 {
     font-size:1.3em;
     color: var(--white-color);
   }
+  .section_contact .section_contact_paragraph3 {
+    margin: 0;
+    width: 100%;
+    font-size: 2em;
+    color: var(--pink-color);
+  }
 
   .section_contact img {
     width: 70%;
@@ -441,12 +453,17 @@ input#img-8:checked~.nav-dots label#img-dot-8 {
     font-size: 3.5em;
     color: var(--black-color);
   }
-
   .section_contact .section_contact_paragraph2 {
     margin: 0;
     width: 100%;
     font-size: 1.2em;
     color: var(--white-color);
+  }
+  .section_contact .section_contact_paragraph3 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.5em;
+    color: var(--pink-color);
   }
 
   /* section_franchise_size */
