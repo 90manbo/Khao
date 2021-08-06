@@ -409,6 +409,23 @@ input#img-8:checked~.nav-dots label#img-dot-8 {
   .section_menu .small_menu img {
     width: 95%;
   }
+
+  /* modal size */
+  .modal-content{
+    align-items: center;
+    margin: auto;
+    margin-top: 20em;
+    display: block;
+    max-width: 50%;
+    max-height: auto;
+    border-radius: 0.7em;
+  }
+  .close {
+    display: block;
+    color: var(--pink-color);
+    font-size: 2.2em;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width:560px) {
@@ -567,7 +584,7 @@ input#img-8:checked~.nav-dots label#img-dot-8 {
   .close {
     display: block;
     color: var(--pink-color);
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bold;
   }
   .close:hover,
